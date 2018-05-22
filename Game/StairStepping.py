@@ -18,62 +18,62 @@ multScore = 2 #multiply the score by this when the player gets a score multiplyi
 
 #images:
 #player stances
-rightStance = "../rightStance.png"
-leftStance = "../leftStance.png"
-rightJump1 = "../jump right_1.png"
-rightJump2 = "../jump right_2.png"
-leftJump1 = "../jump left_1.png"
-leftJump2 = "../jump left_2.png"
-rightMove1 = "../moveRight1.png"
-rightMove2 = "../moveRight2.png"
-leftMove1 = "../moveLeft1.png"
-leftMove2 = "../moveLeft2.png"
+rightStance = "../Resources/Images/rightStance.png"
+leftStance = "../Resources/Images/leftStance.png"
+rightJump1 = "../Resources/Images/jump right_1.png"
+rightJump2 = "../Resources/Images/jump right_2.png"
+leftJump1 = "../Resources/Images/jump left_1.png"
+leftJump2 = "../Resources/Images/jump left_2.png"
+rightMove1 = "../Resources/Images/moveRight1.png"
+rightMove2 = "../Resources/Images/moveRight2.png"
+leftMove1 = "../Resources/Images/moveLeft1.png"
+leftMove2 = "../Resources/Images/moveLeft2.png"
 
 #array to hold the animation for left move and right move
 leftMoveAnimation = [leftMove1, leftMove2, leftMove1]
 rightMoveAnimation = [rightMove1, rightMove2, rightMove1]
 
 #platform images
-p1 = "../Platform 1.png"
-p2 = "../Platform 2.png"
-p3 = "../Platform 3.png"
-p4 = "../Platform 4.png"
-#p5 = "../Platform_YOU_THERE.png"
+p1 = "../Resources/Images/Platform 1.png"
+p2 = "../Resources/Images/Platform 2.png"
+p3 = "../Resources/Images/Platform 3.png"
+p4 = "../Resources/Images/Platform 4.png"
+#p5 = "../Resources/Images/Platform_YOU_THERE.png"
 
 
 #teleportation images
 #t1 and t2 will appear where the sprite is being teleported from
 #t3-t5 will appear at the destination of the teleportation
-t1 = "../teleport_1.png"
-t2 = "../teleport_2.png"
-t3 = "../teleport_3.png"
-t4 = "../teleport_4.png"
-t5 = "../teleport_5.png"
+t1 = "../Resources/Images/teleport_1.png"
+t2 = "../Resources/Images/teleport_2.png"
+t3 = "../Resources/Images/teleport_3.png"
+t4 = "../Resources/Images/teleport_4.png"
+t5 = "../Resources/Images/teleport_5.png"
 #array to store different teleportation sprites
 teleport_images = [t1, t2, t3, t4, t5]
 
 
-backgroundImage = "../BG 1.jpg" #background during gameplay
-backgroundImage2 = "../BG 1.jpg"
-platformImage = "../platform.png" 
+backgroundImage = "../Resources/Images/BG 1.jpg" #background during gameplay
+backgroundImage2 = "../Resources/Images/BG 1.jpg"
+platformImage = "../Resources/Images/platform.png" 
 
-playAgainImage = "../playAgain.png"#play again image path
-exitGameImage = "../exitGame.jpg" #exit game image path
-mainStartImage = "../startGame.png" #start game image path
+playAgainImage = "../Resources/Images/playAgain.png"#play again image path
+exitGameImage = "../Resources/Images/exitGame.jpg" #exit game image path
+mainStartImage = "../Resources/Images/startGame.png" #start game image path
 
-mainMenuImage = "../mainMenu.png" #shows the main menu image
+mainMenuImage = "../Resources/Images/mainMenu.png" #shows the main menu image
 
-gameoverImage = "../gameover2.jpg" #shows game over menu image
+gameoverImage = "../Resources/Images/gameover2.jpg" #shows game over menu image
 
 #bad object(s)
 numBadObjs = 7
-fallingObject1 = "../eyeballFalling2.png" #this object falls "randomly"
-fallingObject2 = "../poisonBottle.png" #this object falls "randomly"
-fallingObject4 = "../enemyBloodCell.png"
-fallingObject5 = "../enemyBacteria.png"
-fallingObject7 = "../Virus Green.png"
-fallingObject8 = "../Virus Purple.png"
-fallingObject9 = "../Virus Red.png"
+fallingObject1 = "../Resources/Images/eyeballFalling2.png" #this object falls "randomly"
+fallingObject2 = "../Resources/Images/poisonBottle.png" #this object falls "randomly"
+fallingObject4 = "../Resources/Images/enemyBloodCell.png"
+fallingObject5 = "../Resources/Images/enemyBacteria.png"
+fallingObject7 = "../Resources/Images/Virus Green.png"
+fallingObject8 = "../Resources/Images/Virus Purple.png"
+fallingObject9 = "../Resources/Images/Virus Red.png"
 
 #array that stores different platform images
 platforms = [p1, p2, p3, p4]
@@ -82,8 +82,8 @@ fBADObjectArray = [fallingObject1, fallingObject2, fallingObject4, fallingObject
 
 #good object
 numGoodObjs = 2
-fallingObject3 = "../x2-logo.png" #good object, doubles score
-fallingObject6 = "../increasedSpeedPowerup.png" #increases speed of player for a little bit
+fallingObject3 = "../Resources/Images/x2-logo.png" #good object, doubles score
+fallingObject6 = "../Resources/Images/increasedSpeedPowerup.png" #increases speed of player for a little bit
 
 fGOODObjectArray = [fallingObject3, fallingObject6]
 
@@ -557,8 +557,8 @@ teleportation = sprite(0, 0, teleport_images[0], 0, 0)
 #######################################
 
 #####################MUSIC
-pygame.mixer.music.load("../Broken_reality.wav")
-t_effect = pygame.mixer.Sound("../teleport_effect.wav")
+pygame.mixer.music.load("../Resources/Sounds/Broken_reality.wav")
+t_effect = pygame.mixer.Sound("../Resources/Effects/teleport_effect.wav")
 ##########################
 
 
